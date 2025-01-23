@@ -1,0 +1,62 @@
+{
+  "Etudiants": [
+    {
+      "id": 1,
+      "nom": "Diagne",
+      "prenom": "Modou",
+      "age": 30,
+      "niveau": "Master",
+      "classe": "Informatique",
+      "filiere": "Développement Web",
+      "telephone": "0123456789"
+    },
+    {
+      "id": 2,
+      "nom": "Moulin",
+      "prenom": "Laurent",
+      "age": 25,
+      "niveau": "Licence",
+      "classe": "Informatique",
+      "filiere": "Développement Web",
+      "telephone": "0987654321"
+    }
+  ],
+  "Classes": [
+    {
+      "id": 1,
+      "libelle": "Informatique"
+    },
+    {
+      "id": 2,
+      "libelle": "Mathématiques"
+    }
+  ],
+  "Filieres": [
+    {
+      "id": 1,
+      "libelle": "Développement Web"
+    },
+    {
+      "id": 2,
+      "libelle": "Développement Mobile"
+    },
+    {
+      "id": 3,
+      "libelle": "Analyse Numérique"
+    },
+    {
+      "id": 4,
+      "libelle": "Systèmes d'Information"
+    }
+  ],
+  "Niveaux": [
+    {
+      "id": 1,
+      "libelle": "Licence"
+    },
+    {
+      "id": 2,
+      "libelle": "Master"
+    }
+  ]
+}

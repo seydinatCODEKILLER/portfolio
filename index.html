@@ -16,39 +16,115 @@
     <title>Portfolio Seydina Thiam</title>
   </head>
   <body class="bg-gray-900 font-poppins text-white">
-    <header class="flex justify-between items-center px-4 py-3">
-      <h1>AfroCode</h1>
-      <nav>
-        <ul class="bg-gray-600 flex items-center gap-5 rounded-full px-4">
-          <li class="py-2 px-3 bg-purple-500 text-white rounded-full">
+    <!-- header -->
+    <header class="flex justify-between items-center px-4 py-3 h-[12vh]">
+      <div class="flex items-center gap-1">
+        <div class="px-3 py-1 bg-purple-500 text-white rounded font-semibold">
+          AF
+        </div>
+        <h1>AfroCode</h1>
+      </div>
+      <nav class="hidden lg:block">
+        <ul
+          class="bg-gray-800 flex items-center gap-5 rounded-full px-5 text-sm"
+        >
+          <li class="p-3 bg-purple-500 text-white rounded-full">
             <a href="#">
               Home
-              <i class="ri-arrow-right-up-fill"></i>
+              <i class="ri-home-3-line"></i>
             </a>
           </li>
-          <li class="">
-            <a href="#">A propos <i class="ri-arrow-right-up-fill"></i></a>
+          <li class="p-3">
+            <a href="#">A propos <i class="ri-shield-user-line"></i></a>
           </li>
-          <li class="">
-            <a href="#">Réalisations <i class="ri-arrow-right-up-fill"></i></a>
+          <li class="p-3">
+            <a href="#">Réalisations <i class="ri-folder-shield-2-line"></i></a>
           </li>
-          <li class="">
-            <a href="#">Contact <i class="ri-arrow-right-up-fill"></i></a>
+          <li class="p-3">
+            <a href="#">Contact <i class="ri-contacts-book-3-line"></i></a>
           </li>
         </ul>
       </nav>
-      <div class="flex items-center gap-2">
+      <div class="hidden md:flex items-center gap-2">
         <div
           class="h-10 w-10 flex justify-center items-center border border-gray-200 rounded-full hover:bg-gray-600 cursor-pointer"
         >
           <i class="ri-github-fill text-lg"></i>
         </div>
+        <div>
+          <label class="inline-flex items-center relative">
+            <input class="peer hidden" id="toggle" type="checkbox" />
+            <div
+              class="relative w-[110px] h-[50px] bg-white peer-checked:bg-gray-800 rounded-full after:absolute after:content-[''] after:w-[40px] after:h-[40px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[5px] after:left-[5px] active:after:w-[50px] peer-checked:after:left-[105px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"
+            ></div>
+            <i
+              class="ri-sun-fill fill-white peer-checked:opacity-60 absolute w-8 h-8 left-[16px] top-3"
+            ></i>
+            <i
+              class="ri-moon-clear-line fill-black opacity-60 peer-checked:opacity-70 peer-checked:fill-white absolute w-7 h-7 right-[4px]"
+            ></i>
+          </label>
+        </div>
         <div
-          class="h-10 w-10 flex justify-center items-center border border-gray-200 rounded-full hover:bg-gray-600 cursor-pointer"
+          class="h-10 w-10 flex justify-center items-center border lg:hidden border-gray-400 rounded-full hover:bg-gray-600 cursor-pointer"
         >
-          <i class="ri-sun-fill"></i>
+          <i class="ri-menu-3-line text-lg"></i>
         </div>
       </div>
     </header>
+    <main>
+      <div class="flex items-center justify-center relative h-[88vh]">
+        <img
+          src="./public/images/pattern.png"
+          alt="Pattern"
+          class="w-[600px]"
+        />
+        <div
+          class="flex flex-col gap-8 justify-center items-center h-full text-white text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-full"
+        >
+          <h1 class="text-5xl font-bold">Fullstack Developper</h1>
+          <p class="text-sm leading-relaxed w-full md:max-w-xl lg:max-w-3xl">
+            Chez Maith, nous allions créativité et expertise technique pour
+            concevoir des solutions digitales sur mesure. Du développement de
+            sites web modernes au design UI/UX soigné, nous accompagnons les
+            entreprises de toutes tailles dans leur transformation digitale en
+            créant des expériences uniques et performantes qui répondent à leurs
+            besoins spécifiques.
+          </p>
+          <a
+            href="#"
+            class="px-4 py-3 bg-gray-800 rounded-3xl border border-gray-500 hover:bg-gray-700 text-sm font-medium text-white transition duration-300 ease-in-out"
+          >
+            <span>Telecharger CV</span>
+            <i class="ri-download-cloud-line"></i>
+          </a>
+        </div>
+        <div
+          class="h-10 w-10 absolute bottom-0 flex justify-center items-center border border-gray-500 rounded-full hover:bg-gray-600 cursor-pointer animate-bounce"
+        >
+          <i class="ri-arrow-down-line"></i>
+        </div>
+        <div
+          class="w-[300px] h-[300px] rounded-full border border-gray-400 absolute top-0 right-0 bg-purple-500 blur-[150px]"
+        ></div>
+        <div class="hidden md:flex flex-col gap-2 absolute left-3 bottom-4">
+          <div
+            class="h-10 w-10 flex justify-center items-center border border-gray-200 rounded-full hover:bg-gray-600 cursor-pointer"
+          >
+            <i class="ri-instagram-fill text-lg"></i>
+          </div>
+          <div
+            class="h-10 w-10 flex justify-center items-center border border-gray-200 rounded-full hover:bg-gray-600 cursor-pointer"
+          >
+            <i class="ri-linkedin-box-fill text-lg"></i>
+          </div>
+          <div
+            class="h-10 w-10 flex justify-center items-center border border-gray-200 rounded-full hover:bg-gray-600 cursor-pointer"
+          >
+            <i class="ri-facebook-box-fill text-lg"></i>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
